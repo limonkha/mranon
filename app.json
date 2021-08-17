@@ -1,0 +1,41 @@
+{
+    "name": "MrAnonFilesBot",
+    "description": "A telegram bot that can upload telegram media files to anonfiles.com",
+    "logo": "https://i.ibb.co/zZVrKKL/thumb.jpg",
+    "keywords": [
+        "Anonfiles",
+        "Uploader",
+        "Telegram Bot"
+    ],
+    "success_url": "https://telegram.me/mrbotslist",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API HASH from my.telegram.org",
+            "value": ""
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Your Update Channel Username without '@'",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
